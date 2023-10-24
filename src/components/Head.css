@@ -1,0 +1,96 @@
+.left-div {
+  width: 60%;
+  height: 100vh;
+  background-color: rgb(190, 188, 238,0.7);
+  transition: width 0.3s; /* Para una transición suave */
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Slab', serif;
+}
+
+
+.perfil-h1 {
+  font-size: 400%;
+  margin-left: 5%;
+  position: relative;
+  transform: translate(10%, -20%);
+  margin-top: -50%;
+  color: blue;
+}
+
+
+.perfil-h1 span {
+  text-decoration: underline;
+}
+
+.img-perfil {
+  width: 40vw;
+  height: 70vh;
+  margin-left: 48%;
+  margin-top: 10%;
+  position: relative;
+}
+
+.photo{
+  width: 40vw;
+  height: 70vh;
+  margin-left: 60%;
+  margin-top: 10%;
+  position: relative;
+}
+
+video{
+  width: 80%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 950px) {
+  .left-div {
+      width: 90%;
+  }
+
+
+  .perfil-h1 {
+      font-size: 300%;
+  }
+  .img-perfil {
+      width: 50vw;
+      height: 60vh;
+      margin-left: 50%;
+      margin-top: 15%;
+  }
+
+  .photo{
+    width: 80%;
+    width: 80%;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .left-div {
+      width: 100%;
+  }
+
+  .perfil-demo {
+      width: 75%;
+      height: 50%;
+  }
+
+  .perfil-h1 {
+    font-size: 250%;
+  transform: translate(0, -20%);
+  }
+
+  .img-perfil {
+      width: 70vw;
+      height: 60vh;
+      margin-left: 20%;
+      margin-top: 20%;
+  }
+  .photo{
+    width: 80%;
+    width: 80%;
+    margin-left: 20%;
+  }
+}

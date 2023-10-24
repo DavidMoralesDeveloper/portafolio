@@ -1,0 +1,56 @@
+.container-contacto{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(190, 188, 238,0.7);
+    transition: width 0.3s; /* Para una transición suave */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+}
+
+.text-contacto{
+    margin: auto;
+margin-left: 15%;
+margin-right: 10%;
+text-justify: auto;
+}
+
+.form-contacto{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-top: 5%;
+    gap: 3rem;
+}
+
+
+.input-contcto{
+    width: 80%;
+    background: none;
+    
+    outline-style: none;
+    border-bottom: 3px solid;
+    border-top: 0px solid;
+    border-left: 1px;
+    border-right: 1px;
+
+}
+
+.button-form{
+    width: 80%;
+    outline: none;
+    background: none;
+    border: 2px solid;
+}
+@media screen and (max-width: 950px) {
+    .container-contacto{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container-contacto{
+        width: 100%;
+    }
+}

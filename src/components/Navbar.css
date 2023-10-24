@@ -1,0 +1,121 @@
+
+  /* Aplicar estilos al botón de hamburguesa */
+  .hamburger-button {
+    display: none; /* Por defecto, ocultar el botón */
+    position: fixed;
+    font-size: 30px; /* Tamaño de fuente del botón */
+    background-color: transparent; /* Fondo transparente */
+    border: none;
+    cursor: pointer;
+    z-index: 1; /* Para que esté por encima del contenido */
+    position: fixed;
+  }
+
+.right-div {
+    width: 40vw;
+    height: 100vh;
+    transition: 0.3s; /* Para una transición suave */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    position: fixed;
+    left: 60%;
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Roboto Slab', serif;
+    /* background-color: #aaa; */
+    
+  }
+  .spline{
+    margin-left: 40%;
+    width: 30%;
+    height: 20%;
+  }
+
+.menu-h1{
+
+text-align: center; 
+}
+
+.menu-ul{
+
+  list-style: none; /* Quita los puntos de los elementos li */
+  padding: 0; /* Elimina el espacio interno por defecto del ul */
+  text-align: center;
+}
+
+.menu-li{
+  margin: 1rem;
+}
+ .menu-li a {
+  text-decoration:none;
+  color: black;
+ }
+
+  
+  /* Estilos para pantallas más pequeñas (menos de 800px) */
+  @media screen and (max-width: 950px) {
+  
+    .right-div {
+      display: none; /* Ocultar el div derecho */
+      /* position: relative; */
+    }
+
+    .right-div.visible{
+      display: flex;
+      /* max-width: 300px; */
+      width: 60vw;
+      height: 100vh;
+      z-index: 1;
+     position: relative fixed;
+     left: 30%;
+     top: 10%;
+     background-color: #aaa;
+     /* top: 0px; */
+    }
+  
+    .hamburger-button {
+      display: block; /* Mostrar el botón de hamburguesa */
+      /* position: relative; */
+      top: 10px;/* Ajusta la posición superior según tus necesidades */
+      right: 10px; /*Ajusta la posición izquierda según tus necesidades */
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .right-div.visible{
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      position: relative fixed;
+      left: 0;
+      top: 10%;
+      /* position: absolute; */
+      /* left: -100px;   */
+      /* right: -200%;    */
+
+    }
+
+    
+    .hamburger-button {
+      
+      display: block; /* Mostrar el botón de hamburguesa */
+      top: 10px;/* Ajusta la posición superior según tus necesidades */
+      right: 10px; /*Ajusta la posición izquierda según tus necesidades */
+      font-size: 40px;
+      /* position: absolute;
+      position: relative; */
+    }
+  }
+
+  /* right: auto;
+  left: -100%;
+  pointer-events: none;
+  background-color: #fff;
+  max-width: 300px;
+  width: 100%;
+  z-index: 9;
+  padding: 80px 30px 60px;
+  overflow: auto;
+  height: 100%;
+  transition: .25s ease-in; */
