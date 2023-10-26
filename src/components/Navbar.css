@@ -51,6 +51,16 @@ text-align: center;
   color: black;
  }
 
+ .icons-nav{
+  margin-top: 70%;
+  margin-left: 45%;
+  display: flex;
+  gap: 1rem;
+ }
+
+ .icon-links{
+  font-size: 300%;
+ }
   
   /* Estilos para pantallas más pequeñas (menos de 800px) */
   @media screen and (max-width: 950px) {
@@ -69,13 +79,12 @@ text-align: center;
      position: relative fixed;
      left: 30%;
      top: 10%;
-     background-color: #aaa;
+     background-color: #fefefe;
      /* top: 0px; */
     }
   
     .hamburger-button {
       display: block; /* Mostrar el botón de hamburguesa */
-      /* position: relative; */
       top: 10px;/* Ajusta la posición superior según tus necesidades */
       right: 10px; /*Ajusta la posición izquierda según tus necesidades */
     }
@@ -90,10 +99,7 @@ text-align: center;
       position: relative fixed;
       left: 0;
       top: 10%;
-      /* position: absolute; */
-      /* left: -100px;   */
-      /* right: -200%;    */
-
+ 
     }
 
     
@@ -103,19 +109,6 @@ text-align: center;
       top: 10px;/* Ajusta la posición superior según tus necesidades */
       right: 10px; /*Ajusta la posición izquierda según tus necesidades */
       font-size: 40px;
-      /* position: absolute;
-      position: relative; */
+
     }
   }
-
-  /* right: auto;
-  left: -100%;
-  pointer-events: none;
-  background-color: #fff;
-  max-width: 300px;
-  width: 100%;
-  z-index: 9;
-  padding: 80px 30px 60px;
-  overflow: auto;
-  height: 100%;
-  transition: .25s ease-in; */

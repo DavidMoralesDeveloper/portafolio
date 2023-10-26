@@ -1,4 +1,6 @@
 import { useState } from "react";
+import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
+import {FaRegNewspaper} from "react-icons/fa"
 // import Spline from '@splinetool/react-spline';
 import "./Navbar.css";
 
@@ -41,6 +43,20 @@ export const Navbar = () => {
               <a href="#">Contacto</a>{" "}
             </li>
           </ul>
+          <div className="icons-nav">
+            <a href="https://github.com/DavidMoralesDeveloper" target="_blank"rel="noreferrer" className="icon-links">
+
+              < AiFillGithub />
+            </a>
+            <a href="https://www.linkedin.com/in/david-morales-developer/" target="_blank"rel="noreferrer"  className="icon-links">
+
+              < AiFillLinkedin />
+            </a>
+            <a href="https://github.com/DavidMoralesDeveloper" target="_blank"rel="noreferrer" className="icon-links">
+
+              < FaRegNewspaper />
+            </a>
+          </div>
         </nav>
       </div>
     </header>

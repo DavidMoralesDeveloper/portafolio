@@ -18,9 +18,11 @@ export const Contacto = () => {
 
   return (
     <div className="container-contacto">
+      <div className="container-titulo">
+        <h2 className="titulo-protafolio">Contacto</h2>
+      </div>
       <div className="text-contacto">
-        <h2>Contacto</h2>
-        <p>aquiva p</p>
+        <p></p>
       </div>
 
       <form className="form-contacto" ref={form} onSubmit={sendEmail}>

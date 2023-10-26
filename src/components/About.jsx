@@ -5,8 +5,12 @@ import "./About.css";
 export const About = () => {
   return (
     <div className="conteiner-about">
-      <div className="text-about">
+
+        <div className='container-titulo' >
+
         <h2 className="titulo-about">Acerca de mi</h2>
+        </div>
+      <div className="text-about">
         <p>
           Soy una persona que valora la libertad de explorar el mundo y aprender
           de él. Mi pasión por la naturaleza me ha inspirado a abrazar la
@@ -19,17 +23,6 @@ export const About = () => {
           emocionado por el viaje continuo de aprendizaje y autodescubrimiento
           mientras navego por el mundo y sus desafíos.
         </p>
-      </div>
-      <div className="perfil-demo">
-        
-        <a className="about-a" href="#">
-          {" "}
-           DESCARGA CV
-        </a>
-        <a className="about-a" href="#">
-          {" "}
-          PORTAFOLIO
-        </a>
       </div>
 
       <div className="cards-container">

@@ -1,13 +1,16 @@
 .portafolio-container {
   width: 60%;
   height: 100%;
-  background-color: rgb(190, 188, 238, 0.7);
+  background-color: rgba(255, 0, 0, 0.140);
   transition: width 0.3s; /* Para una transición suave */
   display: flex;
   flex-direction: column;
   font-family: "Roboto Slab", serif;
   font-size: 1.2rem;
   gap: 5rem;
+}
+.titulo-protafolio{
+  margin-left: 15%;
 }
 
 .text-portafolio {
