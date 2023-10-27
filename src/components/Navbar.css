@@ -31,10 +31,12 @@
     height: 20%;
   }
 
-.menu-h1{
+#menus-titulo{
 
 text-align: center; 
+
 }
+
 
 .menu-ul{
 
@@ -52,16 +54,20 @@ text-align: center;
  }
 
  .icons-nav{
-  margin-top: 70%;
-  margin-left: 45%;
+  margin-top: 15%;
+  margin-left: 35%;
   display: flex;
   gap: 1rem;
  }
 
  .icon-links{
   font-size: 300%;
+  color: black;
  }
   
+ .icon-links :hover{
+  color: red;
+ }
   /* Estilos para pantallas más pequeñas (menos de 800px) */
   @media screen and (max-width: 950px) {
   

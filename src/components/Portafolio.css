@@ -7,21 +7,22 @@
   flex-direction: column;
   font-family: "Roboto Slab", serif;
   font-size: 1.2rem;
-  gap: 5rem;
+  gap: 2rem;
 }
 .titulo-protafolio{
   margin-left: 15%;
 }
 
 .text-portafolio {
-  margin: auto;
+  /* margin: auto; */
   margin-left: 15%;
   margin-right: 10%;
-  text-justify: auto;
+  /* text-justify: auto; */
 }
 
 .subtitulo-portafolio {
   font-size: 1.1rem;
+
 }
 
 /* -----------------------imagenes con hover -------------- */
@@ -107,6 +108,21 @@
 margin-top: 5%;
 
 }
+
+.top-portafolio{
+ text-decoration: none;
+ color: #fff;
+}
+
+/* ---------------------------slider--------------------- */
+
+
+
+.img-slide{
+width: 100%;
+}
+
+
 
 /* ----------------------@mrdias---------------- */
 

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CV from '../images/docw/david.morales.CV.pdf'
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
 import {FaRegNewspaper} from "react-icons/fa"
 // import Spline from '@splinetool/react-spline';
@@ -19,7 +20,7 @@ export const Navbar = () => {
       </div>
       <div className={`right-div ${menuVisible ? "visible" : ""}`}>
         {/* <div className="spline"><Spline scene="https://prod.spline.design/63SPrWDK2WscTkaN/scene.splinecode"  /></div> */}
-        <h1 className="menu-h1">David Morales</h1>
+        <h1 id="menus-titulo" className="menu-h1">David Morales</h1>
         <nav className="menu-nav">
           <ul className="menu-ul">
             <li className="menu-li">
@@ -52,7 +53,7 @@ export const Navbar = () => {
 
               < AiFillLinkedin />
             </a>
-            <a href="https://github.com/DavidMoralesDeveloper" target="_blank"rel="noreferrer" className="icon-links">
+            <a href={CV} target="_blank"rel="noreferrer" className="icon-links">
 
               < FaRegNewspaper />
             </a>

@@ -22,6 +22,7 @@ export const Contacto = () => {
         <h2 className="titulo-protafolio">Contacto</h2>
       </div>
       <div className="text-contacto">
+      En desarrollo
         <p></p>
       </div>
 
