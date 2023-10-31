@@ -28,7 +28,16 @@ const proyectos = {
       },
       {
         id: 3, imgUrl: "src/images/assets/plomeria-page/3.png"
-      }
+      },
+      {
+        id: 4, imgUrl: "src/images/assets/plomeria-page/4.jpg"
+      },
+      {
+        id: 5, imgUrl: "src/images/assets/plomeria-page/5.jpg"
+      },
+      {
+        id: 6, imgUrl: "src/images/assets/plomeria-page/6.jpg"
+      },
     ]
   },
   proyecto2: {

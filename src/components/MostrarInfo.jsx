@@ -7,7 +7,7 @@ import "./Portafolio.css";
 
 function MostrarInfo({ proyecto, onClick }) {
   const listRef = useRef();
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, ] = useState(0);
   useEffect(() => {
     const listNode = listRef.current;
     const imgNode = listNode.querySelectorAll("li > img")[currentIndex];
@@ -19,19 +19,19 @@ function MostrarInfo({ proyecto, onClick }) {
     }
   }, [currentIndex]);
 
-  const scrollToImage = (direction) => {
-    if (direction === "prev") {
-      setCurrentIndex((curr) => {
-        const isFirstSlide = currentIndex === 0;
-        return isFirstSlide ? 0 : curr - 1;
-      });
-    } else {
-      const isLastSlide = currentIndex === proyecto.imagesSlider.length - 1;
-      if (!isLastSlide) {
-        setCurrentIndex((curr) => curr + 1);
-      }
-    }
-  };
+  // const scrollToImage = (direction) => {
+  //   if (direction === "prev") {
+  //     setCurrentIndex((curr) => {
+  //       const isFirstSlide = currentIndex === 0;
+  //       return isFirstSlide ? 0 : curr - 1;
+  //     });
+  //   } else {
+  //     const isLastSlide = currentIndex === proyecto.imagesSlider.length - 1;
+  //     if (!isLastSlide) {
+  //       setCurrentIndex((curr) => curr + 1);
+  //     }
+  //   }
+  // };
 
   return (
     <div className="mostrar-info">
