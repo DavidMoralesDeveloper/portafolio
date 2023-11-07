@@ -5,6 +5,17 @@ import meencotre from "../images/meencotre-page.png";
 import reposo from "../images/reposo-page.png";
 import fisioterapia from "../images/fisioterapia-page.png";
 import blogPplomeria from "../images/detalles/plomeria-page/plomeria-blog.png";
+import plomeriaPlomeria from "../images/detalles/plomeria-page/plomeria-plomeria.png";
+import plomeriaServicios from "../images/detalles/plomeria-page/plomeria-servicios.png";
+import yentoncesCard from "../images/detalles/yentonces-page/yentonces-card.png";
+import yentoncesPay from "../images/detalles/yentonces-page/yentonces-pay.png";
+import yentoncesContacto from "../images/detalles/yentonces-page/yentonces-contacto.png";
+import casadeServicios from "../images/detalles/casade-page/casade-servicios.png";
+import casadeInfo from "../images/detalles/casade-page/casade-info.png";
+import casadeContacto from "../images/detalles/casade-page/casade-contacto.png";
+import quiroCards from "../images/detalles/quiro-page/quiro-cards.png";
+import quiroPresent from "../images/detalles/quiro-page/quiro-presentacion.png";
+import quiroInfo from "../images/detalles/quiro-page/quiro-info.png";
 import "./Portafolio.css";
 
 const proyectos = {
@@ -25,10 +36,10 @@ const proyectos = {
        imgUrl: blogPplomeria
       },
       {
-       imgUrl: "src/images/detalles/plomeria-page/plomeria-plomeria.png"
+       imgUrl: plomeriaPlomeria
       },
       {
-       imgUrl: "src/images/detalles/plomeria-page/plomeria-servicios.png"
+       imgUrl: plomeriaServicios
       }
     ]
   },
@@ -46,13 +57,13 @@ const proyectos = {
     ],
     imagesSlider : [
       {
-        id: 1, imgUrl: "src/images/assets/yentonces-page/1.png"
+        imgUrl: yentoncesCard
       },
       {
-        id: 2, imgUrl: "src/images/assets/yentonces-page/2.png"
+        imgUrl: yentoncesPay
       },
       {
-        id: 3, imgUrl: "src/images/assets/yentonces-page/3.png"
+        imgUrl: yentoncesContacto
       }
     ]
   },
@@ -71,13 +82,13 @@ const proyectos = {
     ],
     imagesSlider : [
       {
-        id: 1, imgUrl: "src/images/assets/casade-page/1.png"
+        imgUrl: casadeServicios
       },
       {
-        id: 2, imgUrl: "src/images/assets/casade-page/2.png"
+        imgUrl: casadeInfo
       },
       {
-        id: 3, imgUrl: "src/images/assets/casade-page/3.png"
+       imgUrl: casadeContacto
       }
     ]
   },
@@ -91,13 +102,13 @@ const proyectos = {
     tecnologias: [{ tecnologia: "React" }, { tecnologia: "CSS " }],
     imagesSlider : [
       {
-        id: 1, imgUrl: "src/images/assets/quiro-page/1.png"
+        imgUrl: quiroCards
       },
       {
-        id: 2, imgUrl: "src/images/assets/quiro-page/2.png"
+        imgUrl: quiroPresent
       },
       {
-        id: 3, imgUrl: "src/images/assets/quiro-page/3.png"
+        imgUrl: quiroInfo
       }
     ]
   },
