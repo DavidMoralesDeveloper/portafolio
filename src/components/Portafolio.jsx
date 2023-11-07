@@ -21,7 +21,7 @@ const proyectos = {
     ],
     imagesSlider : [
       {
-        id: 1, imgUrl: "/portafolio/src/images/assets/plomeria-page/1.png"
+        id: 1, imgUrl: ".../images/assets/plomeria-page/1.png"
       },
       {
         id: 2, imgUrl: "src/images/assets/plomeria-page/2.png"
