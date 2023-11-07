@@ -31,8 +31,8 @@ function MostrarInfo({ proyecto, onClick }) {
         <div className="images-contaimer">
           
           <ul >
-            {proyecto.imagesSlider.map((img) => (
-              <li key={img.id}>
+            {proyecto.imagesSlider.map((img, index) => (
+              <li key={index}>
                 {console.log(img.imgUrl)}
                 <img src={img.imgUrl} className="img-slide" />
               </li>

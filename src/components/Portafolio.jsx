@@ -4,6 +4,7 @@ import plomeria from "../images/plomeria-page.png";
 import meencotre from "../images/meencotre-page.png";
 import reposo from "../images/reposo-page.png";
 import fisioterapia from "../images/fisioterapia-page.png";
+import blogPplomeria from "../images/detalles/plomeria-page/plomeria-blog.png";
 import "./Portafolio.css";
 
 const proyectos = {
@@ -21,13 +22,13 @@ const proyectos = {
     ],
     imagesSlider : [
       {
-        id: 1, imgUrl: "src/images/assets/plomeria-page/plomeria-blog.png"
+       imgUrl: blogPplomeria
       },
       {
-        id: 2, imgUrl: "src/images/assets/plomeria-page/plomeria-plomeria.png"
+       imgUrl: "src/images/detalles/plomeria-page/plomeria-plomeria.png"
       },
       {
-        id: 3, imgUrl: "src/images/assets/plomeria-page/plomeria-servicios.png"
+       imgUrl: "src/images/detalles/plomeria-page/plomeria-servicios.png"
       }
     ]
   },
