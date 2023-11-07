@@ -152,7 +152,6 @@ export const Portafolio = () => {
           // Mostrar imágenes de proyectos
           Object.entries(proyectos).map(([clave, proyecto]) => (
             <div className="imagenes-hover" key={clave}>
-              {console.log(proyecto.imagen)}
               <img src={proyecto.imagen} alt={`Imagen del proyecto ${clave}`} />
               <div className="capa-portafolio">
                 <button

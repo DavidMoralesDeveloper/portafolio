@@ -106,8 +106,23 @@
 }
 .tec-info{
 margin-top: 5%;
+text-align: center;
 
 }
+.info-h2{
+  text-align: center;
+}
+.info-a{
+  text-align: center;
+  font-size: 2rem;
+  /* color: blue; */
+  padding-top: 25px;
+}
+
+.info-a:hover{
+  color: red;
+}
+
 
 .top-portafolio{
  text-decoration: none;
@@ -120,6 +135,15 @@ margin-top: 5%;
 
 .img-slide{
 width: 100%;
+margin-top: 50px;
+}
+li{
+  list-style: none;
+}
+.images-contaimer{
+  width: 110%;
+  /* margin-top: 60px; */
+
 }
 
 
