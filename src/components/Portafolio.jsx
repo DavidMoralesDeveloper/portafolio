@@ -21,23 +21,14 @@ const proyectos = {
     ],
     imagesSlider : [
       {
-        id: 1, imgUrl: "src/images/assets/plomeria-page/1.png"
+        id: 1, imgUrl: "/portafolio/src/images/assets/plomeria-page/1.png"
       },
       {
         id: 2, imgUrl: "src/images/assets/plomeria-page/2.png"
       },
       {
         id: 3, imgUrl: "src/images/assets/plomeria-page/3.png"
-      },
-      {
-        id: 4, imgUrl: "src/images/assets/plomeria-page/4.jpg"
-      },
-      {
-        id: 5, imgUrl: "src/images/assets/plomeria-page/5.jpg"
-      },
-      {
-        id: 6, imgUrl: "src/images/assets/plomeria-page/6.jpg"
-      },
+      }
     ]
   },
   proyecto2: {
@@ -149,6 +140,7 @@ export const Portafolio = () => {
           // Mostrar imágenes de proyectos
           Object.entries(proyectos).map(([clave, proyecto]) => (
             <div className="imagenes-hover" key={clave}>
+              {console.log(proyecto.imagen)}
               <img src={proyecto.imagen} alt={`Imagen del proyecto ${clave}`} />
               <div className="capa-portafolio">
                 <button

@@ -1,37 +1,12 @@
 import PropTypes from "prop-types";
 // import { Slide } from './Slide';
-import { useRef, useState, useEffect } from "react";
+// import { useRef, useState, useEffect } from "react";
 
 import { BiArrowBack } from "react-icons/bi";
 import "./Portafolio.css";
 
 function MostrarInfo({ proyecto, onClick }) {
-  const listRef = useRef();
-  const [currentIndex, ] = useState(0);
-  useEffect(() => {
-    const listNode = listRef.current;
-    const imgNode = listNode.querySelectorAll("li > img")[currentIndex];
-
-    if (imgNode) {
-      imgNode.scrollIntoView({
-        behavior: "smooth",
-      });
-    }
-  }, [currentIndex]);
-
-  // const scrollToImage = (direction) => {
-  //   if (direction === "prev") {
-  //     setCurrentIndex((curr) => {
-  //       const isFirstSlide = currentIndex === 0;
-  //       return isFirstSlide ? 0 : curr - 1;
-  //     });
-  //   } else {
-  //     const isLastSlide = currentIndex === proyecto.imagesSlider.length - 1;
-  //     if (!isLastSlide) {
-  //       setCurrentIndex((curr) => curr + 1);
-  //     }
-  //   }
-  // };
+ 
 
   return (
     <div className="mostrar-info">
@@ -52,17 +27,13 @@ function MostrarInfo({ proyecto, onClick }) {
       {/* --------------------------------------- */}
 
       <div className="slider-container">
-        Creando Slider ......
-        {/* <div className="leftArrow" onClick={() => scrollToImage("prev")}>
-          &#10092;
-        </div>
-        <div className="rightArrow" onClick={() => scrollToImage("next")}>
-          &#10093;
-        </div> */}
+        
         <div className="images-contaimer">
-          <ul ref={listRef}>
+          
+          <ul >
             {proyecto.imagesSlider.map((img) => (
               <li key={img.id}>
+                {console.log(img.imgUrl)}
                 <img src={img.imgUrl} className="img-slide" />
               </li>
             ))}
