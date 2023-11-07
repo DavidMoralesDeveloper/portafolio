@@ -21,13 +21,13 @@ const proyectos = {
     ],
     imagesSlider : [
       {
-        id: 1, imgUrl: ".../images/assets/plomeria-page/1.png"
+        id: 1, imgUrl: "src/images/assets/plomeria-page/plomeria-blog.png"
       },
       {
-        id: 2, imgUrl: "src/images/assets/plomeria-page/2.png"
+        id: 2, imgUrl: "src/images/assets/plomeria-page/plomeria-plomeria.png"
       },
       {
-        id: 3, imgUrl: "src/images/assets/plomeria-page/3.png"
+        id: 3, imgUrl: "src/images/assets/plomeria-page/plomeria-servicios.png"
       }
     ]
   },
