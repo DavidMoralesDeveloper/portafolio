@@ -1,7 +1,7 @@
 import { useState } from "react";
 import CV from '../images/docw/david.morales.CV.pdf'
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
-import {FaRegNewspaper} from "react-icons/fa"
+
 // import Spline from '@splinetool/react-spline';
 import "./Navbar.css";
 
@@ -29,11 +29,11 @@ export const Navbar = () => {
             </li>
             <li className="menu-li">
               {" "}
-              <a href="#">Acerca de mi</a>{" "}
+              <a href="#about">Acerca de mi</a>{" "}
             </li>
             <li className="menu-li">
               {" "}
-              <a href="#">Portafolio</a>{" "}
+              <a href="#portafolio">Portafolio</a>{" "}
             </li>
             <li className="menu-li">
               {" "}
@@ -41,7 +41,7 @@ export const Navbar = () => {
             </li>
             <li className="menu-li">
               {" "}
-              <a href="#">Contacto</a>{" "}
+              <a href="#contacto">Contacto</a>{" "}
             </li>
           </ul>
           <div className="icons-nav">
@@ -53,9 +53,9 @@ export const Navbar = () => {
 
               < AiFillLinkedin />
             </a>
-            <a href={CV} target="_blank"rel="noreferrer" className="icon-links">
+            <a href={CV} target="_blank"rel="noreferrer" className="icon-letter">
 
-              < FaRegNewspaper />
+              cv
             </a>
           </div>
         </nav>

@@ -4,7 +4,7 @@ import { TbTriangleSquareCircle, TbCircleTriangle } from 'react-icons/tb'
 import "./About.css";
 export const About = () => {
   return (
-    <div className="conteiner-about">
+    <div id='about' className="conteiner-about">
 
         <div className='container-titulo' >
 

@@ -5,7 +5,7 @@ export const Skills = () => {
     <div className="container-skills">
 
         <div className="galeria-skills">
-            
+            hola
         </div>
 
     </div>

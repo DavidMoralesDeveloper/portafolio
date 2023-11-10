@@ -1,46 +1,44 @@
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';import "./Contacto.css";
 export const Contacto = () => {
 
     const form = useRef();
+    const [formularioEnviado, setFormularioEnviado] = useState(false);
 
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      emailjs.sendForm(import.meta.env.VITE_YOUR_SERVICE_ID, import.meta.env.VITE_YOUR_TEMPLATE_ID, form.current, import.meta.env.VITE_YOUR_PUBLIC_KEY)
         .then((result) => {
             console.log(result.text);
+            console.log('message send')
+            e.target.reset();
+            setFormularioEnviado(true);
+            
         }, (error) => {
             console.log(error.text);
         });
     };
 
   return (
-    <div className="container-contacto">
+    <div id='contacto' className="container-contacto">
       <div className="container-titulo">
         <h2 className="titulo-protafolio">Contacto</h2>
       </div>
       <div className="text-contacto">
-      En desarrollo
-        <p></p>
+      {formularioEnviado && <p>Mensaje enviado correctamente</p>}
       </div>
 
       <form className="form-contacto" ref={form} onSubmit={sendEmail}>
-        <label className="lavel-contacto">
-          {/* Nombre: */}
-          <input className="input-contcto" type="text" name="name" placeholder="NOMBRE" />
-        </label>
-        <label>
-          {/* Email: */}
-          <input className="input-contcto" type="email" name="email" placeholder="EMAIL" />
-        </label>
-        <label>
-          {/* Texto: */}
-          <textarea className="input-contcto" type="textarea" name="textarea" placeholder="MENSAJE" />
-        </label>
+ 
+          <input className="input-contcto"  type="text" name="user_name" placeholder="NOMBRE" />
 
-        <button className="button-form" type="submit">Enviar</button>
+          <input className="input-contcto" type="email" name="user_email" placeholder="EMAIL" />
+          <textarea className="input-contcto" type="textarea" name="message" placeholder="MENSAJE" />
+
+
+        <button className="button-form" type="submit" value="Send">Enviar</button>
       </form>
     </div>
   );

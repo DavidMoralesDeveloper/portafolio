@@ -7,6 +7,7 @@
     flex-direction: column;
     font-family: 'Roboto Slab', serif;
     font-size: 1.2rem;
+   
     /* gap: 2rem; */
 }
 
@@ -14,6 +15,7 @@
     margin: auto;
 margin-left: 15%;
 margin-right: 10%;
+/* margin-bottom: 15%; */
 text-justify: auto;
 }
 
@@ -23,14 +25,15 @@ text-justify: auto;
     margin-left: 15%;
     margin-top: 5%;
     gap: 3rem;
+    margin-bottom: 15%;
 }
 
 
 .input-contcto{
     width: 80%;
     background: none;
-    
-    outline-style: none;
+    /* background-color: rgb(255, 255, 255); */
+    /* outline-style: none; */
     border-bottom: 3px solid;
     border-top: 0px solid;
     border-left: 1px;
@@ -40,7 +43,8 @@ text-justify: auto;
 
 .button-form{
     width: 80%;
-    outline: none;
+    /* outline: none; */
+    cursor: pointer;
     background: none;
     border: 2px solid;
 }

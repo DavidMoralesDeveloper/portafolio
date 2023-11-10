@@ -68,6 +68,14 @@ text-align: center;
  .icon-links :hover{
   color: red;
  }
+
+ .icon-letter{
+  font-size: 250%;
+  color: black;
+ }
+ .icon-letter:hover{
+  color: red;
+ }
   /* Estilos para pantallas más pequeñas (menos de 800px) */
   @media screen and (max-width: 950px) {
   

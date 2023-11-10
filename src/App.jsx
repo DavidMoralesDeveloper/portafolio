@@ -2,7 +2,7 @@ import { Navbar } from "./components/Navbar";
 import {Head} from './components/Head'
 import {About} from './components/About'
 import { Portafolio } from "./components/Portafolio";
-import { Skills } from "./components/Skills";
+// import { Skills } from "./components/Skills";
 import { Contacto } from "./components/Contacto";
 import "./App.css";
 
@@ -14,7 +14,7 @@ function App() {
       <Head />
       <About />
       <Portafolio />
-      <Skills />
+      {/* <Skills /> */}
       <Contacto />
       </div>
     </>
